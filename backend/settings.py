@@ -116,10 +116,21 @@ SIMPLE_JWT = {
 }
 
 # CORS — allow local Vite dev server
-CORS_ALLOWED_ORIGINS = config(
+raw_origins = config(
     'CORS_ALLOWED_ORIGINS',
     default='http://localhost:5173,http://127.0.0.1:5173'
 ).split(',')
+
+CORS_ALLOWED_ORIGINS = []
+for origin in raw_origins:
+    o = origin.strip()
+    if not o:
+        continue
+    if not o.startswith(('http://', 'https://')):
+        CORS_ALLOWED_ORIGINS.append(f'https://{o}')
+    else:
+        CORS_ALLOWED_ORIGINS.append(o)
+
 CORS_ALLOW_CREDENTIALS = True
 
 # File upload
