@@ -5,7 +5,6 @@ To deliver a high-quality prototype within the project timeline, I intentionally
 ---
 
 ## 1. Automated Carbon Emission Calculations (API-Driven)
-
 ### Why I did not build it:
 Calculating exact metric tons of CO2-equivalent ($tCO_2e$) requires matching consumption data against hyper-localized, time-specific emission factors (e.g., the specific grid mix of Karnataka in 2024 for electricity, or the direct EPA factor for diesel). Building or maintaining this database of factors—or integrating with an external paid ESG API like Climatiq—would add significant cost, configuration, and API dependency to a simple prototype.
 
