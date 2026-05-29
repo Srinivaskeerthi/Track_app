@@ -3,7 +3,6 @@
 For this prototype, I researched realistic corporate data exports and created representative sample spreadsheets. Here is the documentation of that research, my data design choices, and real-world failure modes.
 
 ---
-
 ## 1. SAP Fuel & Procurement (Scope 1)
 
 ### Real-World Format Researched:
