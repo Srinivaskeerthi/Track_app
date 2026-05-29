@@ -17,7 +17,6 @@ erDiagram
     ENERGYRECORD ||--o{ VALIDATIONFLAG : triggers
     ORGANIZATION ||--o{ AUDITLOG : logs
 ```
-
 ### Organization
 * **Why it exists**: It represents the highest-level tenant (e.g., "Acme Industries"). 
 * **Why I created it**: Instead of relying on a simple text field or hoping different departments wouldn't see each other's files, I grouped all users, facilities, and records under this model.
