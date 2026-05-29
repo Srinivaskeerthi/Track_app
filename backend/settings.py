@@ -15,8 +15,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = config('SECRET_KEY', default='django-insecure-dev-only-key')
 DEBUG = config('DEBUG', default=False, cast=bool)
-# Parse ALLOWED_HOSTS robustly to prevent 400 Bad Request from formatting typos
-raw_hosts = config('ALLOWED_HOSTS', default='localhost,127.0.0.1')
+# Parse ALLOWED_HOSTS robustly (checks both ALLOWED_HOSTS and ALLOWED_HOST singular)
+raw_hosts = config('ALLOWED_HOSTS', default=None) or config('ALLOWED_HOST', default='localhost,127.0.0.1')
 if '*' in raw_hosts or 'or' in raw_hosts:
     ALLOWED_HOSTS = ['*']
 else:
