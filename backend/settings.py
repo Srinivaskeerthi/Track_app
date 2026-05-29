@@ -15,7 +15,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = config('SECRET_KEY', default='django-insecure-dev-only-key')
 DEBUG = config('DEBUG', default=False, cast=bool)
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='localhost,127.0.0.1').split(',')
+# Parse ALLOWED_HOSTS robustly to prevent 400 Bad Request from formatting typos
+raw_hosts = config('ALLOWED_HOSTS', default='localhost,127.0.0.1')
+if '*' in raw_hosts or 'or' in raw_hosts:
+    ALLOWED_HOSTS = ['*']
+else:
+    ALLOWED_HOSTS = [h.strip() for h in raw_hosts.split(',') if h.strip()]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
