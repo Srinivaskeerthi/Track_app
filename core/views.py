@@ -138,14 +138,6 @@ class DataUploadListView(generics.ListAPIView):
     serializer_class = DataUploadSerializer
 
     def get_queryset(self):
-        return DataUpload.objects.filter(organization=request.user.organization
-                                        ).order_by('-created_at')
-
-    @property
-    def request(self):
-        return self._request
-
-    def get_queryset(self):
         return DataUpload.objects.filter(
             organization=self.request.user.organization
         ).order_by('-created_at')
