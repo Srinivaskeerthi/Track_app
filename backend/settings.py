@@ -131,6 +131,8 @@ for origin in raw_origins:
     o = origin.strip()
     if not o:
         continue
+    # Strip any trailing slashes to prevent E014 validation errors
+    o = o.rstrip('/')
     if not o.startswith(('http://', 'https://')):
         CORS_ALLOWED_ORIGINS.append(f'https://{o}')
     else:
