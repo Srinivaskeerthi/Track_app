@@ -3,7 +3,6 @@
 While building this platform, I faced several ambiguities in the requirements and data formats. Here is how I resolved them and the engineering trade-offs I made.
 
 ---
-
 ## 1. Why I Chose CSV Uploads
 * **The Ambiguity**: The requirement mentioned "ingesting data from various sources." It was unclear if we needed live API integrations, email scraping, or manual uploads.
 * **My Decision**: I decided to focus exclusively on file uploads (CSV and Excel) for the prototype.
