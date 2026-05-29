@@ -1,6 +1,10 @@
 import axios from 'axios'
 
-const backendBase = import.meta.env.VITE_API_URL ? `${import.meta.env.VITE_API_URL}/api` : '/api'
+let rawBase = import.meta.env.VITE_API_URL || ''
+if (rawBase.endsWith('/')) {
+  rawBase = rawBase.slice(0, -1)
+}
+const backendBase = rawBase ? `${rawBase}/api` : '/api'
 
 // Force Vercel to rebuild and inject the production environment variables
 const api = axios.create({
