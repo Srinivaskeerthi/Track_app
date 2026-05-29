@@ -1,0 +1,11 @@
+Plant,Posting Date,Material,Quantity,Unit
+Mumbai Plant,2024-01-05,Diesel,5000,L
+Mumbai Plant,2024-01-12,Diesel,4800,L
+Pune Warehouse,2024-01-15,Petrol,1200,L
+Delhi Office,2024-01-20,CNG,800,kg
+Mumbai Plant,2024-01-25,Diesel,6200,L
+Pune Warehouse,2024-02-01,Petrol,950,L
+Delhi Office,2024-02-08,CNG,750,kg
+Mumbai Plant,2024-02-14,Diesel,5100,L
+Mumbai Plant,2024-02-20,Diesel,4900,L
+Pune Warehouse,2024-03-02,Petrol,1100,L

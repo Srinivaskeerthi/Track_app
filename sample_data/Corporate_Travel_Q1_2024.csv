@@ -1,0 +1,9 @@
+Employee,Travel Date,Origin,Destination,Distance (km),Category
+Priya Sharma,2024-01-10,BOM,DEL,1148,Flight
+Rahul Verma,2024-01-15,DEL,LHR,6729,Flight
+Priya Sharma,2024-02-05,BOM,SIN,4174,Flight
+Rahul Verma,2024-02-12,DEL,BOM,1148,Flight
+Aisha Khan,2024-02-18,BOM,DXB,1934,Flight
+Priya Sharma,2024-03-01,BOM,DEL,1148,Flight
+Rahul Verma,2024-03-08,DEL,BOM,1148,Flight
+Aisha Khan,2024-03-15,BOM,HKG,4184,Flight

@@ -1,0 +1,10 @@
+Account Number,Billing Period,Consumption,Unit,Facility
+MET-001,2024-01-31,32000,kWh,Mumbai Plant
+MET-002,2024-01-31,18500,kWh,Pune Warehouse
+MET-003,2024-01-31,8200,kWh,Delhi Office
+MET-001,2024-02-29,30500,kWh,Mumbai Plant
+MET-002,2024-02-29,17800,kWh,Pune Warehouse
+MET-003,2024-02-29,7900,kWh,Delhi Office
+MET-001,2024-03-31,33200,kWh,Mumbai Plant
+MET-002,2024-03-31,19100,kWh,Pune Warehouse
+MET-003,2024-03-31,8600,kWh,Delhi Office
