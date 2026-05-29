@@ -2,6 +2,7 @@ import axios from 'axios'
 
 const backendBase = import.meta.env.VITE_API_URL ? `${import.meta.env.VITE_API_URL}/api` : '/api'
 
+// Force Vercel to rebuild and inject the production environment variables
 const api = axios.create({
   baseURL: backendBase,
   headers: { 'Content-Type': 'application/json' },
