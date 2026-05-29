@@ -133,21 +133,6 @@ export default function Login() {
               {loading ? 'Signing in...' : 'Sign in'}
             </button>
           </form>
-
-          {/* Demo credentials */}
-          <div style={{
-            marginTop: 24, padding: '14px 16px',
-            background: 'var(--bg-secondary)', borderRadius: 8,
-            border: '1px solid var(--border)',
-          }}>
-            <div style={{ fontSize: 12, color: 'var(--text-muted)', marginBottom: 8, fontWeight: 500 }}>
-              Demo credentials
-            </div>
-            <div style={{ fontSize: 13, color: 'var(--text-secondary)', lineHeight: 1.8 }}>
-              <strong style={{ color: 'var(--text-primary)' }}>admin</strong> / demo1234 — Full access<br />
-              <strong style={{ color: 'var(--text-primary)' }}>analyst</strong> / demo1234 — Analyst role
-            </div>
-          </div>
         </div>
       </div>
     </div>
